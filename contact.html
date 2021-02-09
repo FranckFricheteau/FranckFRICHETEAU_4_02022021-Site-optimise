@@ -34,9 +34,12 @@
 
     <!--css Font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 
     <!--css mise en page du site-->
     <link rel="stylesheet" type="text/css" href="./css/la_chouette_agence.css">
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css">
+
 
     <title>Contactez la Chouette Agence</title>
 
@@ -141,6 +144,33 @@
 						Effacer
 					</button>
                         </form>
+
+                        <div class="gd-rgpd-agree">
+                            <p class="cgv-text">
+                                <input type="checkbox" id="agree" required />
+                                <label for="agree" style="display:inline;">
+                            En cochant cette case et en soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter dans le cadre de ma demande indiquée dans ce formulaire. Aucun autre traitement ne sera effectué avec mes informations.
+                            </label>
+                            </p>
+
+                            <p class="cgv-text">Pour connaitre et exercer vos droits , notamment de retrait de votre consentement à l'utilisation de données collectés par ce formulaire, veuillez consulter notre
+                                <a style="text-decoration:underline;" href="#">Politique de confidentialité</a>
+                            </p>
+                        </div>
+
+                        <script>
+                            jQuery(document).ready(function() {
+                                jQuery('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"]', function() {
+                                    if (jQuery('#agree').is(':checked')) {
+                                        jQuery(this).submit();
+                                    } else {
+                                        //alert("You must agree with the terms and conditions of sales to check out.");
+                                        alert("Vous devez accepter les conditions générales d'utilisation");
+                                        return false;
+                                    }
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
