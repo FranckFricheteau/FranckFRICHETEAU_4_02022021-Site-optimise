@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!--balises meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Accueil - La Chouette Agence">
+    <meta name="description" content="La chouette agence une grande agence de web design basée à Lyon">
+    <meta name="author" content="Franck FRICHETEAU">
+    <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
+
+    <!--balises meta robots-->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!--meta tags Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://la-chouette-agence.franckfricheteau.com/">
+    <meta property="og:title" content="Accueil - La Chouette Agence">
+    <meta property="og:description" content="La chouette agence une grande agence de web design basée à Lyon">
+
+    <!--meta tags Twitter -->
+    <meta property="twitter:card" content="website">
+    <meta property="twitter:url" content="https://la-chouette-agence.franckfricheteau.com/">
+    <meta property="twitter:title" content="Accueil - La Chouette Agence">
+    <meta property="twitter:description" content="La chouette agence une grande agence de web design basée à Lyon">
+
+    <!--favicon du site-->
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+
+    <!--css bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--css Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--css mise en page du site-->
+    <link rel="stylesheet" type="text/css" href="./css/la_chouette_agence.css">
+
+    <title>Contactez la Chouette Agence</title>
+
+    <!-- Analytics -->
+
+    <!-- Analytics END -->
+
+</head>
+
+<body>
+    <!-- Principal conteneur -->
+    <div class="page-container">
+
+        <!-- bloc-0 -->
+        <header class="bloc bgc-white l-bloc " id="bloc-0">
+
+            <div class="container bloc-sm">
+
+                <nav class="navbar row">
+
+                    <div class="navbar-header">
+
+                        <a class="navbar-brand" href="index.html" aria-label="Retour à l'accueil">
+                            <div class="content-img">
+                                <img src="img/la-chouette-agence.png" alt="logo_chouette_agence" width="170" height="35" />
+                            </div>
+                        </a>
+
+                        <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+
+                        <ul class="site-navigation nav navbar-nav">
+
+                            <li>
+                                <a href="index.html">Accueil</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- bloc-0 END -->
+
+        <!-- bloc-6 -->
+        <section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="text-center hero-bloc-text tc-white">
+                            Parlons web design !
+                        </h1>
+                        <p class="text-center mg-lg tc-white tight-width-whitespace">
+                            Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br> Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- bloc-6 END -->
+
+        <!-- bloc-7 -->
+        <div class="bloc bgc-white l-bloc" id="bloc-7">
+            <div class="container bloc-lg">
+                <div class="form-position">
+                    <div class="col-sm-6">
+                        <form id="form_1" class="form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Nom :</label>
+                                <input id="name" type="text" name="user_name" placeholder="Nom" class="form-control" pattern="[^@]*@[^@]" required oninvalid="this.setCustomValidity('Champ obligatoire')">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mail">E-mail </label>
+                                <input id="mail" type="email" name="user_mail" placeholder="mail" class="form-control" pattern="[^@]*@[^@]" required oninvalid="this.setCustomValidity('Champ obligatoire')">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="msg">Comment nous avez-vous connu ? </label>
+                                <input id="msg" type="text" name="user_msg" placeholder="Votre réponse" class="form-control" pattern="[^@]*@[^@]" required oninvalid="this.setCustomValidity('Champ obligatoire')">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br /></label>
+                                <textarea id="message" name="user_message" placeholder="Message" class="form-control" rows="4" cols="50" required></textarea>
+                            </div>
+
+                            <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+						Envoyer
+                    </button><br />
+                            <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="reset">
+						Effacer
+					</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bloc-7 END -->
+
+        <!-- ScrollToTop Button -->
+        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+        <!-- ScrollToTop Button END-->
+
+
+        <!-- Footer - bloc-8 -->
+        <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+            <div class="container bloc-sm">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="title">
+                            <h2>
+                                La chouette agence - Agence web basée à Lyon.<br />
+                            </h2>
+                        </div>
+
+                        <div class="adress text-center col-sm-12">
+                            <p>
+                                2 place Sathonay 69001 Lyon<br /> Ouvert de 9h à 18h, du lundi au vendredi<br /> contact@lachouetteagence.com
+                                <br />
+                            </p>
+                        </div>
+
+                        <div class="col-sm-12  social">
+                            <div class="col-sm-3">
+                                <div class="text-center social">
+                                    <a href="https://twitter.com/?lang=fr" aria-label="Lien vers compte twitter de l'agence">
+                                        <i class="fa fa-twitter icon-md"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="text-center social">
+                                    <a href="https://www.facebook.com/" aria-label="Lien vers compte facebook de l'agence">
+                                        <i class="fa fa-facebook icon-md"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="text-center social">
+                                    <a href="https://www.dribbble.com/" aria-label="Lien vers compte dribbble de l'agence">
+                                        <i class="fa fa-dribbble icon-md"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="text-center social">
+                                    <a href="https://instagram.com/" aria-label="Lien vers compte instagram de l'agence">
+                                        <i class="fa fa-instagram icon-md"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer - bloc-8 END -->
+
+    </div>
+    <!-- Principal conteneur END -->
+    <!--Les scripts-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/blocs.min.js"></script>
+    <script src="./js/jqBootstrapValidation.js"></script>
+    <script src="./js/formHandler.js"></script>
+
+
+</body>
+
+</html>
