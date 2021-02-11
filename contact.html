@@ -115,20 +115,21 @@
             <div class="container bloc-lg">
                 <div class="form-position">
                     <div class="col-sm-6">
-                        <form id="form_1" class="form" novalidate>
+                        <form id="form_1" class="form" action="./includes/form_1.php" method="post">
                             <div class="form-group">
+
                                 <label for="name">Nom :</label>
-                                <input id="name" type="text" name="user_name" placeholder="Nom" class="form-control" pattern="[^@]*@[^@]" required oninvalid="this.setCustomValidity('Champ obligatoire')">
+                                <input id="name" type="text" name="user_name" placeholder="Nom" class="form-control" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="mail">E-mail </label>
-                                <input id="mail" type="email" name="user_mail" placeholder="mail" class="form-control" pattern="[^@]*@[^@]" required oninvalid="this.setCustomValidity('Champ obligatoire')">
+                                <input id="mail" type="email" name="user_mail" placeholder="mail" class="form-control" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="msg">Comment nous avez-vous connu ? </label>
-                                <input id="msg" type="text" name="user_msg" placeholder="Votre réponse" class="form-control" pattern="[^@]*@[^@]" required oninvalid="this.setCustomValidity('Champ obligatoire')">
+                                <input id="msg" type="text" name="user_msg" placeholder="Votre réponse" class="form-control" required>
                             </div>
 
                             <div class="form-group">
