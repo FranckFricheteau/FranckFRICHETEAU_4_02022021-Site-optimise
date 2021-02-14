@@ -12,7 +12,6 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 # CACHE NAVIGATEUR
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
-Header set Content-Security-Policy "script-src 'self' https://www.google.com"
  <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
  Header set Cache-Control "max-age=2592000, public"
  </FilesMatch>
