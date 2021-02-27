@@ -858,7 +858,6 @@ a:hover {
     background: transparent;
     transform: scale(1.1);
     background-color: #eee;
-    border-radius: 20px;
 }
 
 .navbar-toggle {
